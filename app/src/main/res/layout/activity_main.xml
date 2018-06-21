@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/hello"
+        android:id="@+id/image"
+        />
+
+    <TextView
+        android:layout_below="@id/image"
+        android:text="welcomme to quiz context in this context you have to select right answer  after every right answer you will get  2 marks All the very best "
+        android:id="@+id/Wel_com"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Input"
+        android:padding="16dp"
+        android:layout_below="@id/Wel_com"
+        android:hint="Enter your name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Input"
+        android:id="@+id/q1"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:text="Q1. what is XML stand for ?"/>
+    <RadioGroup
+        android:id="@+id/radio_group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:layout_below="@id/q1">
+        <RadioButton
+            android:id="@+id/Extensible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extensible markup languague"
+            />
+        <RadioButton
+            android:id="@+id/Extention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extention markup language" />
+        <RadioButton
+            android:id="@+id/Example"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Example markup language" />
+        <RadioButton
+            android:id="@+id/Doesnot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doesn't  exist" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group1"
+        android:id="@+id/q2"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:text="Q2. what is IDE stand for ?"/>
+    <RadioGroup
+        android:paddingLeft="18dp"
+        android:id="@+id/radio_group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/q2">
+        <RadioButton
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Integrated Devlopment Environment"
+            />
+        <RadioButton
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Investigational Device Exemption" />
+        <RadioButton
+            android:id="@+id/no1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Integrated Drive Electronics" />
+        <RadioButton
+            android:id="@+id/no2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doesn't  exist" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group2"
+        android:id="@+id/q3"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:text="Q3. JVM is stand for ?"/>
+    <RadioGroup
+        android:paddingLeft="18dp"
+        android:id="@+id/radio_group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/q3">
+        <RadioButton
+            android:id="@+id/java_vision_machine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="java vision machine"
+            />
+        <RadioButton
+            android:id="@+id/java_vertual_machine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java Virtual Machine" />
+        <RadioButton
+            android:id="@+id/Joy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="joy Virtual machine" />
+        <RadioButton
+            android:id="@+id/none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="none" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group3"
+        android:id="@+id/q4"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:text="Q4. which one is java keyword ?"/>
+    <RadioGroup
+        android:paddingLeft="18dp"
+        android:id="@+id/radio_group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/q4">
+        <RadioButton
+            android:id="@+id/and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and"
+            />
+        <RadioButton
+            android:id="@+id/New"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="new" />
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no" />
+        <RadioButton
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group4"
+        android:id="@+id/q5"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:text="Q5.Which is Data type  of JAVA ? "/>
+    <CheckBox
+        android:layout_below="@id/q5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/integer"
+        android:paddingLeft="18dp"
+        android:text="int"/>
+    <CheckBox
+        android:layout_below="@id/integer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/string"
+        android:paddingLeft="18dp"
+        android:text="String"/>
+    <CheckBox
+        android:layout_below="@id/string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrong"
+        android:paddingLeft="18dp"
+        android:text="Array"/>
+    <CheckBox
+        android:layout_below="@id/wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrong1"
+        android:paddingLeft="18dp"
+        android:text="if"/>
+    <LinearLayout
+        android:layout_below="@id/wrong1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout"
+        android:orientation="vertical">
+        <TextView
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:text="Report of Quiz"
+            android:textColor="#000000"/>
+        <TextView
+            android:padding="16dp"
+            android:textSize="18dp"
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text=" "
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <Button
+        android:paddingTop="16dp"
+        android:layout_below="@id/linearlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textAllCaps="true"
+        android:id="@+id/submit"
+        android:background="#008000"
+        android:onClick="display"
+        />
+    </RelativeLayout>
+</ScrollView>
